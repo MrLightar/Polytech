@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="css/style.css"/>
+<h3>Votre ToDo List : </h3>
+
+<form id='todoForm' ng-submit="addT()">
+    <input id='newTask'  ng-model="taskName" />
+    <button id'addt'>Ajouter</button>
+
+</form>
+<ul>
+<div ng-controller="PageTodoCtrl">
+    <h2>Mes Tâches effectuées: {{howManyDone()}} sur {{taskSet.length}}</h2>
+    <li ng-repeat="task in taskSet">
+        <span ng-class="{done:task.done}">{{ task.name }}</span>
+        <button ng-click="removeTask(task)">Supprimer</button>        
+        <input type="checkbox"  ng-model="task.done" ng-change="updateTask(task)"><br>
+    </li>
+</div>
+
+</ul>
+

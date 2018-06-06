@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="TodoApplication">
+
+    <head>
+        <title>Application-Todo-List</title>
+        <meta http-equiv="Content-Type" content="text/html charset=utf-8" />
+
+    </head>
+
+    <body>
+            <h1>Bienvenue sur l'Application Mobile</h1> 
+            <h1><a ui-sref="Accueil" ui-sref-active="active">Ouverture page de connexion</a></h1>
+            
+
+
+            <ui-view></ui-view>
+
+
+            <script src="angular/angular.min.js"></script>
+            <script src="angular/angular-ui-router.min.js"></script>
+        
+            <script src="js/Application.js"></script>
+            <script src="js/PageTodoCtrl.js"></script>
+            <script src="js/TodoService.js"></script>
+            <script src="js/PageCreationCompteCtrl.js"></script>
+            <script src="js/PageConnexionCtrl.js"></script>
+            <script src="js/UserService.js"></script>
+            <script src="js/Route.js"></script>
+
+    </body>
+
+
+</html>

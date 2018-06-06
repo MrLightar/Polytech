@@ -1,0 +1,22 @@
+<h3>Page Connexion</h3>
+
+<br/>
+<br/>
+
+<div>
+    <form id='userForm' ng-submit="getUser()">
+        Nom d'utilisateur : 
+        <input ng-model="userName" />
+        <br>
+        Mot de passe : 
+        <input ng-model="userPassword" />
+        <br>
+        <button>Connexion</button>
+        <span ng-bind="Error"></span>
+    </form>
+
+    <br>
+    <button ng-click="goToCreation()">Création de compte</button>
+
+
+</div>
